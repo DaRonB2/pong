@@ -116,12 +116,17 @@ function restart() {
 	score1 = 0;
 	score2 = 0;
 	winDiv.style.visibility = 'hidden';
+	startBall();
 }
 
 
 function winScreen() {
-	if(score1 == 2|| score2 == 2) {
+	if(score1 == 10|| score2 == 10) {
+		
 		winDiv.style.visibility = 'visible';
+		console.log(leftSpeedOfBall, topSpeedOfBall);
+		leftSpeedOfBall = 0;
+		topSpeedOfBall = 0;
 		console.log(leftSpeedOfBall, topSpeedOfBall);
 		setTimeout(restart, 4000);
 		// restart();
@@ -187,8 +192,10 @@ window.setInterval(function show() {
 
 //Play button
 function play_button() {
-    alert('Player1: W and S Keys | Player2: Up and Down Arrow Keys')
+    alert('Player1: W and S Keys | Player2: Up and Down Arrow Keys');
+	alert('Game goes to 10!');
+	alert('After game is over the ball will shake for 4 seconds giving the cue a new game is starting!')
 }
 
-play_button()
+play_button();
 setTimeout(startBall, 200);
