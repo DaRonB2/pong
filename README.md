@@ -17,9 +17,11 @@ Move your paddles up and down to keep the ping pong ball from falling through on
 **How It Works**
 
 <img width="980" alt="Screenshot 2024-04-23 at 5 22 40 PM" src="https://github.com/DaRonB2/pong/assets/160679308/b611a1e5-c350-4a46-9202-330e3ccc7060">
+
 This is my basic html where I have the divs set-up for my bars and the ping-pong ball. I linked in the font I used for the winner screen in my html as well as my css and javascript pages. There is not much on this page but it holds every piece of the game from the score to the canvas for the game.
 
 <img width="980" alt="Screenshot 2024-04-23 at 5 21 58 PM" src="https://github.com/DaRonB2/pong/assets/160679308/b186d563-3378-4335-ba43-f8ec9570d71a">
+
 In this view of our code we have 3 sets of if functions for 3 different purposes. The first is checking the positioning of the paddles to see if they are within 1px of the borders to the screen. If they are, it will stop all movement in that direction for the paddle. 
 
 In the second set, we have to make sure the ball doesn't fly off the screen so we are checking if the ball is at the top or bottom of the screen and if so the position of the ball will go the opposite of a positive or negative positioning. 
@@ -27,6 +29,7 @@ In the second set, we have to make sure the ball doesn't fly off the screen so w
 Lastly we have some functions to make the ball bounces of the paddles if they come in contact. If the ball is anywhere on the edge of the paddle it will be reflected off and the game will continue on. If not, the score will be upadted +1 to the player who scored and a new ball will appear with the startBall() function.
 
 <img width="613" alt="Screenshot 2024-04-23 at 5 20 48 PM" src="https://github.com/DaRonB2/pong/assets/160679308/184b5aae-ab07-4072-b748-3858f74db282">
+
 The last view of our code shows the keydown function for our game. We had to add an window event listner to make movement happen when an user clicks down one of the keys involved in the game. If a key is pressed the paddles will either move up or down by 30px at a time based on the key pressed. Once the key is released the bar will stop all movement until a key is pressed again.
 
 **WireFrames**
